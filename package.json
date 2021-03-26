@@ -1,0 +1,60 @@
+{
+  "name": "@bfoese/cypress-mx-report",
+  "description": "Mochawesome, Mochawesome-Merge and Mochawesome-Report-Generator are great tools to create a single HTML report file from multiple Cypress runs. But you need some workarounds to have screenshots and videos of each of the runs attached to the report. This cypress plugin is providing these workarounds.",
+  "version": "0.0.1",
+  "author": "Britt Foese <britt.foese@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bfoese/cypress-mx-report.git",
+    "directory": "packages/cypress-mx-report"
+  },
+  "publishConfig": {
+    "registry": "registry=https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "start:dev": "tsc -w",
+    "build": "rimraf dist && tsc",
+    "prepare": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "peerDependencies": {
+    "cypress": ">=6.0.0",
+    "mochawesome": ">=6.0.0",
+    "path": ">=0.12.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.6",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "cypress": "6.7.0",
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "file-system": "^1.2.2",
+    "jest": "^26.6.3",
+    "prettier": "^2.1.2",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.4.3",
+    "ts-loader": "^8.0.9",
+    "ts-node": "^9.0.0",
+    "tsc-watch": "2.2.1",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.0.5"
+  },
+  "files": [
+    "dist/**/*",
+    "*.md"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "cypress",
+    "mochawesom",
+    "mochawesome-merge",
+    "mochawesome-report-generator"
+  ]
+}
