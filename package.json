@@ -1,7 +1,7 @@
 {
   "name": "@bfoese/cypress-mx-report",
   "description": "Mochawesome, Mochawesome-Merge and Mochawesome-Report-Generator are great tools to create a single HTML report file from multiple Cypress runs. But you need some workarounds to have screenshots and videos of each of the runs attached to the report. This cypress plugin is providing these workarounds.",
-  "version": "0.0.1",
+  "version": "0.0.1-snapshot",
   "author": "Britt Foese <britt.foese@gmail.com>",
   "repository": {
     "type": "git",
@@ -41,7 +41,6 @@
     "ts-jest": "^26.4.3",
     "ts-loader": "^8.0.9",
     "ts-node": "^9.0.0",
-    "tsc-watch": "2.2.1",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^4.0.5"
   },
